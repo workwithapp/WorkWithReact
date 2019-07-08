@@ -104,7 +104,7 @@ class Messages extends Component {
                 <ScrollView>
                 
                     <View style={styles.contentContainer}>
-                      <Spinner
+                      <Spinner overlayColor='transparent'
                       visible={this.state.loading}
                      />
                        <FlatList
@@ -149,10 +149,11 @@ class Messages extends Component {
                         </View>
                     )}
                      />
-                      {!this.state.messageList || this.state.messageList.length==0?<View style={{justifyContent:"center",alignItems:"center",height:viewportHeight,width:viewportWidth}}>
-                     <Text  style={{textAlign:"center",fontFamily: 'Roboto-Regular',fontSize: 16,color:"#cccccc"}}>No Messages Yet!!</Text></View>:null}
+
                     </View>
                 </ScrollView>
+                                      {!this.state.messageList || this.state.messageList.length==0?<View style={{justifyContent:"center",alignItems:"center",height:viewportHeight,width:viewportWidth}}>
+                     <Text  style={{textAlign:"center",fontFamily: 'Roboto-Regular',fontSize: 16,color:"#cccccc"}}>No Messages Yet!!</Text></View>:null}
             </View>
         )
     }

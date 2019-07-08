@@ -99,7 +99,7 @@ class MyMatches extends Component {
                     <Image style={{ height: 30, width: 50, marginTop: 2 }} source={require('../assets/logo_without_text.png')} />
                     <Right></Right>
                 </Header>
-                 <Spinner
+                 <Spinner overlayColor='transparent'
                       visible={this.state.loading}
                      />
                     <FlatList

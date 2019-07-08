@@ -31,7 +31,8 @@ class EditProfile1 extends Component {
     }
 
     createProfile = () => {
-         this.props.navigation.navigate("EditProfile2");
+        const { title,project }=this.state;
+         this.props.navigation.navigate("EditProfile2",{title:title,projects:project,name:name,image:image,gender:gender,birth:birth,about:about});
     }
 
     genderPicker = () => {
@@ -150,7 +151,7 @@ class EditProfile1 extends Component {
                         </View>
                     </View>
 
-                    <Text style={{ color: '#fff', fontSize: 15, alignSelf: 'center', marginTop: 10, marginBottom: 30 }}>1/2</Text>
+                    <Text style={{ color: '#fff', fontSize: 15, alignSelf: 'center', marginTop: 10, marginBottom: 30 }}>2/3</Text>
 
                     <View style={styles.input_outer}>
                         <TextInput style={{
@@ -188,11 +189,11 @@ class EditProfile1 extends Component {
                             placeholderTextColor='white' >
                         </TextInput>
                     </View>
-                    {/*<View style = {styles.btn}>
+                    <View style = {styles.btn}>
                         <TouchableOpacity style={[styles.btn, commonstyle.white_btn]} onPress={this.createProfile}>
                             <Text style={[commonstyle.btn_text, { color: constants.BLUE }, commonstyle.bold_text]}>Continue</Text>
                         </TouchableOpacity>
-                    </View>*/}
+                    </View>
                     <View style = {styles.save_btn}>
                         <TouchableOpacity style={[styles.btn, commonstyle.white_btn]} onPress={this.updateProfile}>
                             <Text style={[commonstyle.btn_text, { color: constants.BLUE }, commonstyle.bold_text]}>Save</Text>

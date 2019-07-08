@@ -307,26 +307,26 @@ class CreateProfile2 extends Component {
        var time_arry=[];
 
        if(selectedFruits1){
-          for(var i in selectedFruits1){
-          interest_arry.push(selectedFruits1[i].value)
+          for(var i in this.state.selectedFruits){
+          interest_arry.push(this.state.selectedFruits[i].value)
           }
        }
 
         if(selectedWork){
-          for(var i in selectedWork){
-          work_arry.push(selectedWork[i].value)
+          for(var i in this.state.selectedWorkk){
+          work_arry.push(this.state.selectedWorkk[i].value)
           }
        }
 
          if(selectedDay){
-          for(var i in selectedDay){
-          day_arry.push(selectedDay[i].value)
+          for(var i in this.state.selectedDayy){
+          day_arry.push(this.state.selectedDayy[i].value)
           }
        }
       
          if(selectedTime){
-          for(var i in selectedTime){
-          time_arry.push(selectedTime[i].value)
+          for(var i in this.state.selectedTimee){
+          time_arry.push(this.state.selectedTimee[i].value)
           }
        }
       

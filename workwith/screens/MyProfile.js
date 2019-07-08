@@ -97,7 +97,7 @@ class MyProfile extends Component {
                     <Right></Right>
                 </Header>
                 <ScrollView >
-                     <Spinner
+                     <Spinner overlayColor='transparent'
                       visible={this.state.loading}
                      />
                     <View style={styles.containerVIew}>

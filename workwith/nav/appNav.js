@@ -24,6 +24,7 @@ import Setting from '../screens/setting';
 import ChangePassword from '../screens/changePassword';
 import BlockedUsers from '../screens/blockedUsers';
 import ContactUs from '../screens/contactUs';
+import BugReport from '../screens/bugReport';
 import Subscription from '../screens/subscription';
 import Chat from '../screens/chat';
 import CommonHome from '../screens/commonHome';
@@ -104,6 +105,10 @@ export const AppNav = createStackNavigator({
   },
   BlockedUsers: {
     screen: BlockedUsers,
+    navigationOptions: { header: null }
+  },
+  BugReport: {
+    screen: BugReport,
     navigationOptions: { header: null }
   },
   ContactUs: {

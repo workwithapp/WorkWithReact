@@ -115,7 +115,7 @@ class Discover extends Component {
           <Image style={{ height: 30, width: 50, marginTop: 5 }} source={require('../assets/logo_without_text.png')} />
           <Right></Right>
         </Header>
-          <Spinner visible={this.state.loading}/>
+          <Spinner visible={this.state.loading} overlayColor='transparent'/>
         <ScrollView>
           <View style={styles.containerVIew}>
 

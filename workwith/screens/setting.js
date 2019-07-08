@@ -57,6 +57,9 @@ class Setting extends Component {
     goToContactUs = () => {
         this.props.navigation.navigate('ContactUs');
     }
+     goToBugReport = () => {
+        this.props.navigation.navigate('BugReport');
+    }
     goToSubscription =()=>{
         this.props.navigation.navigate('Subscription');
     }
@@ -71,6 +74,8 @@ class Setting extends Component {
            // this.getSuggestions( data.data.token)
         }).done(); 
     }
+
+
 
        LogOut = () =>{
     // alert("hiii")
@@ -230,6 +235,20 @@ class Setting extends Component {
                                 <TouchableOpacity onPress={this.goToContactUs}>
                                     <Text style={styles.content}>
                                         Contact Us
+                            </Text>
+                                </TouchableOpacity>
+                            </View>
+                            <View >
+                                <Ionicons name="ios-arrow-forward" size={25} style={{ color: '#fff' }} />
+                            </View>
+                        </TouchableOpacity>
+                        <View style={{ borderWidth: 1, borderBottomColor: '#989898', opacity: 0.1, marginTop: 10 }}>
+                        </View>                       
+                         <TouchableOpacity style={styles.containerView} onPress={this.goToBugReport}>
+                            <View>
+                                <TouchableOpacity >
+                                    <Text style={styles.content}>
+                                        Report a bug
                             </Text>
                                 </TouchableOpacity>
                             </View>

@@ -306,7 +306,7 @@ class Suggested extends Component {
                     <Image style={{ height: 30, width: 50, marginTop: 5 }} source={require('../assets/logo_without_text.png')} />
                     <Right></Right>
                 </Header>
-                 <Spinner
+                 <Spinner overlayColor='transparent'
                       visible={this.state.loading}
                      />
                 {match_check === false ?<ScrollView >
